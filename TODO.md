@@ -1,6 +1,12 @@
-# TODO: Update Contact Form to Send Emails
+## Backend removal (frontend-only)
 
-- [x] Update handleSubmit in ContactSection.tsx to make a POST request to /api/contact with form data (name, email, message)
-- [x] Handle success response: Show success toast and reset form
-- [x] Handle error response: Show error toast
-- [ ] Test the form submission to ensure email is sent to antronic.a.2023.aids@ritchennai.edu.in
+- [x] Inspect current backend structure (server/*, shared)
+- [x] Update root package.json scripts to run frontend only
+- [x] Remove server backend files (server/*)
+
+- [x] Run `npm run dev` to verify frontend starts
+
+
+- [x] Run `npm run build` to verify frontend build succeeds
+
+

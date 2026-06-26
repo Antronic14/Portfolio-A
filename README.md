@@ -25,7 +25,11 @@ A full-stack portfolio website built with React, Express, and TypeScript. Featur
 To start the development server:
 
 ```bash
+<<<<<<< HEAD
 npx tsx server/index.ts
+=======
+ntspx tsx server/index.
+>>>>>>> d5ca32c (Convert portfolio to frontend-only)
 ```
 
 The server will start on port 3000 (or the port specified in the `PORT` environment variable). In development mode, it serves both the API and the client application.
