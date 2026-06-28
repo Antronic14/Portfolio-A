@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Cpu, Bug, TrendingUp } from "lucide-react";
 import StatCard from "./StatCard";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function AboutSection() {
   return (
@@ -27,12 +27,17 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="flex flex-col items-center lg:items-start"
           >
-            <Avatar className="h-40 w-40 mb-8 border-4 border-chart-1/30" data-testid="img-avatar">
-              <AvatarFallback className="text-4xl font-bold bg-gradient-to-br from-chart-1 to-chart-2 text-background">
-                AA
-              </AvatarFallback>
+                                  <Avatar
+              className="h-48 w-48 mb-8 border-4 border-chart-1 shadow-2xl shadow-chart-1/30"
+            >
+              <AvatarImage
+                src="/attached_assets/profile.jpg"
+                alt="Antronic A"
+                className="object-cover"
+              />
+              <AvatarFallback>AA</AvatarFallback>
             </Avatar>
-            
+                        
             <p className="text-lg leading-relaxed text-muted-foreground text-center lg:text-left" data-testid="text-about-description">
               Passionate MERN Stack Developer and B.Tech student in Artificial Intelligence and Data Science with expertise in full-stack web development. Proficient in JavaScript ES6+, React.js with Hooks, Node.js, Express.js, MongoDB, and RESTful API development. Experienced in building responsive web applications, implementing secure authentication systems, state management with Redux, and developing scalable web solutions. Skilled in Git workflow, version control, and API integration with proven ability to optimize performance and deliver efficient applications.
             </p>
